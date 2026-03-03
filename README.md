@@ -60,7 +60,7 @@ Only Central and Five-Point errors are plotted to compare the two most accurate 
 These plots show how the numerical derivative accuracy changes depending on both the method (mode) and the chosen step size h.
 
 
-##Integrate module (integrate.py)
+## Integrate module (integrate.py)
 The `integrate.py` file provides an `integ` function that numerically approximates a definite integral on an interval \([a,b]\). It is used in `experiment.py` to compare how the error changes as the number of subintervals `n` increases.
 
 ### What `integ` takes
