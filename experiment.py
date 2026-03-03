@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-import numpy as num  
+import numpy as np  
 
 import calculus.differentiate as differentiate
 import calculus.integrate as integrate
