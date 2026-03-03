@@ -14,10 +14,10 @@ gprime = 2 + 4 * np.log(2)
 
 hlist = np.linspace(0.005, 0.5, 100)
 
-forward_error = np.abs([diff(g, a, h=h, mode=0) for h in hlist] - gprime)
-backward_error = np.abs([diff(g, a, h=h, mode=2) for h in hlist] - gprime)
-central_error = np.abs([diff(g, a, h=h, mode=1) for h in hlist] - gprime)
-five_point_error = np.abs([diff(g, a, h=h, mode=3) for h in hlist] - gprime)
+forward_error = np.abs([differentiate.diff(g, a, h=h, mode=0) for h in hlist] - gprime)
+backward_error = np.abs([differentiate.diff(g, a, h=h, mode=2) for h in hlist] - gprime)
+central_error = np.abs([differentiate.diff(g, a, h=h, mode=1) for h in hlist] - gprime)
+five_point_error = np.abs([differentiate.diff(g, a, h=h, mode=3) for h in hlist] - gprime)
 
 plt.figure()
 
