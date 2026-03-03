@@ -122,20 +122,24 @@ for i, n in enumerate(nlist):
     trapezoidal_error[i] = abs(trap_approx - gint)
     simpson_error[i] = abs(simp_approx - gint)
 ```
-What the plots show
+ What the plots show
 
 The experiment produces two plots:
 
-All methods vs number of subintervals
+# All methods vs number of subintervals
 
 Left, Right, Trapezoidal, and Simpson errors are plotted on the same figure.
 
 This shows how accuracy improves as n increases (more subintervals = finer approximation).
 
-Trapezoidal vs Simpson
+# Trapezoidal vs Simpson
+
 
 Only Trapezoidal and Simpson errors are plotted.
 
 This highlights the two most accurate integration methods and makes it easier to compare them.
 
 Overall, the plots demonstrate that increasing n generally decreases error, and higher-order methods (especially Simpson’s) typically converge faster than left/right sums.
+
+# Acknowledgements
+I'd like to acknowledge Dr.Rumpf for his guidance that led me to complete this assignment, and ChatGPT for correcting syntax issues, code, and deepening my understanding of coding integration.
